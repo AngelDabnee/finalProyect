@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyecto Inventario</string>
+    <!--Strings Splash-->
+    <string name="title">BIENVENIDO</string>
+    <!--Strings Login-->
+    <string name="name">NOMBRE</string>
+    <string name="password">CONTRASEÑA</string>
+    <string name="enter">LOGIN</string>
+    <!--Strings Validación Login-->
+    <string name="loginError">ERROR</string>
+    <string name="msgError">Favor de Escribir Sus Credenciales de Acceso</string>
+
+    <!--Fragmento uno. Strings-->
+    <string name="hello_blank_fragment">Hola, es el Primer Fragmento</string>
+    <string name="titleInventario">Menú</string>
+    <string name="textProducts">Productos</string>
+    <string name="textSuppliers">Proveedores</string>
+    <string name="textUser">Usuarios</string>
+    <string name="textExit">Salir</string>
+
+
+
+</resources>

@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InventaryProyect" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/red</item>
+    </style>
+    <style name="btnLogin" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/red</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:width">200dp</item>
+    </style>
+
+    <!--Styles Img-->
+    <style name="imgProducts" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name = "android:layout_width">157dp</item>
+        <item name="android:layout_height">135dp</item>
+    </style>
+    <style name="imgSuppliers" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name = "android:layout_width">157dp</item>
+        <item name="android:layout_height">135dp</item>
+    </style>
+    <style name="imgUsers" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name = "android:layout_width">157dp</item>
+        <item name="android:layout_height">135dp</item>
+    </style>
+
+    <style name="Theme.InventaryProyect" parent="Base.Theme.InventaryProyect" />
+</resources>
