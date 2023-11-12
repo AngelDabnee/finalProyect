@@ -25,6 +25,15 @@
         <action
             android:id="@+id/action_menuFragment_to_productFragment"
             app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_supplierFragment"
+            app:destination="@id/supplierFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_exitFragment"
+            app:destination="@id/exitFragment" />
     </fragment>
     <fragment
         android:id="@+id/productFragment"
@@ -35,4 +44,19 @@
             android:id="@+id/action_productFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/supplierFragment"
+        android:name="AngelDabnee.com.SupplierFragment"
+        android:label="fragment_supplier"
+        tools:layout="@layout/fragment_supplier" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="AngelDabnee.com.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="AngelDabnee.com.ExitFragment"
+        android:label="fragment_exit"
+        tools:layout="@layout/fragment_exit" />
 </navigation>

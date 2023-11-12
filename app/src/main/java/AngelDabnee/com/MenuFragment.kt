@@ -26,9 +26,19 @@ class MenuFragment : Fragment() {
             val navController : NavController = Navigation.findNavController(view)
             navController.navigate(R.id.action_menuFragment_to_productFragment)
         }
-
-
-
+        btnSuppler.setOnClickListener{
+            val navController : NavController = Navigation.findNavController(view)
+            navController.navigate(R.id.action_menuFragment_to_supplierFragment)
+        }
+        btnUser.setOnClickListener{
+            val navController : NavController = Navigation.findNavController(view)
+            navController.navigate(R.id.action_menuFragment_to_userFragment)
+        }
+        btnExit.setOnClickListener{
+            val navController : NavController = Navigation.findNavController(view)
+            navController.navigate(R.id.action_menuFragment_to_exitFragment)
+        }
+        
         return view
     }
 }
