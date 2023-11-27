@@ -33,7 +33,7 @@ class ProductDetailFragment : Fragment() {
         recyclerView?.adapter = adapter
         btnBack.setOnClickListener{
             val navController : NavController = Navigation.findNavController(view)
-            navController.navigate(R.id.action_productDetailFragment_to_menuFragment)
+            navController.navigate(R.id.action_productDetailFragment_to_productFragment)
         }
 
         return view
