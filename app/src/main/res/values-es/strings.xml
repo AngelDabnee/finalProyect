@@ -20,5 +20,16 @@
     <string name="textExit">Salir</string>
 
 
+    <!--Strings para items-->
+    <string name="btnBackMenu">Volver</string>
+    <string name="textSubTitleProduct">Existencias</string>
+    <string name="textSubTitleUser">Usuarios</string>
+    <string name="textSubTitleSupplier">Proveedores</string>
+    <string name="btnReOrden">Solicitar Producto</string>
+    <string name="btnCancel">Cancelar</string>
+
+
+    <string name="btnProductDetail">Ver Más</string>
+
 
 </resources>

@@ -26,4 +26,22 @@
     </style>
 
     <style name="Theme.InventaryProyect" parent="Base.Theme.InventaryProyect" />
+
+    <style name="btnReorden" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:width">200dp</item>
+    </style>
+    <style name="btnCancelar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/red</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:width">150dp</item>
+    </style>
+
+
+
+
+
 </resources>

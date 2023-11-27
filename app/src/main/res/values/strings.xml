@@ -19,4 +19,17 @@
     <string name="textUser">Users</string>
     <string name="textExit">Exit</string>
 
+    <!--Strings para items-->
+    <string name="btnBackMenu">Back</string>
+    <string name="textSubTitleProduct">Stock</string>
+    <string name="textSubTitleUser">User</string>
+    <string name="textSubTitleSupplier">Supplier</string>
+    <string name="btnReOrden">Reorder Item</string>
+    <string name="btnCancel">Cancel</string>
+
+
+    <string name="btnProductDetail">More</string>
+
+
+
 </resources>

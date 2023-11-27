@@ -1,0 +1,10 @@
+package AngelDabnee.com
+
+data class ProductStock(
+    val id:Int,
+    val name: String,
+    val price: Double,
+    val quantity: Int,
+    val unit: String,
+    val image: String
+)

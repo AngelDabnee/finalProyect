@@ -31,10 +31,10 @@ class LoginFragment : Fragment() {
                 val navController:NavController = Navigation.findNavController(view)
                 navController.navigate(R.id.action_loginFragment_to_menuFragment)
 
-                val nameText = name.text.toString()
+                /*val nameText = name.text.toString()
                 val passText = password.text.toString()
                 val message = "Bienvenido: $nameText, contraseña $passText"
-                Toast.makeText(context,message, Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,message, Toast.LENGTH_SHORT).show()*/
             }
             else{
                 val bottomSheetDialog = BottomSheetDialog(view.context)

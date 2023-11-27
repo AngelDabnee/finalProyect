@@ -43,20 +43,47 @@
         <action
             android:id="@+id/action_productFragment_to_menuFragment"
             app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_menuFragment2"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_productFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/supplierFragment"
         android:name="AngelDabnee.com.SupplierFragment"
         android:label="fragment_supplier"
-        tools:layout="@layout/fragment_supplier" />
+        tools:layout="@layout/fragment_supplier" >
+        <action
+            android:id="@+id/action_supplierFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/userFragment"
         android:name="AngelDabnee.com.UserFragment"
         android:label="fragment_user"
-        tools:layout="@layout/fragment_user" />
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/exitFragment"
         android:name="AngelDabnee.com.ExitFragment"
         android:label="fragment_exit"
-        tools:layout="@layout/fragment_exit" />
+        tools:layout="@layout/fragment_exit" >
+        <action
+            android:id="@+id/action_exitFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="AngelDabnee.com.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <action
+            android:id="@+id/action_productDetailFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
 </navigation>

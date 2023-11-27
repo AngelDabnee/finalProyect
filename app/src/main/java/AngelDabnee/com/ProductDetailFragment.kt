@@ -8,44 +8,36 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class ProductFragment : Fragment() {
+class ProductDetailFragment : Fragment() {
     private var products:List<ProductStock> = emptyList()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view =  inflater.inflate(R.layout.fragment_product, container, false)
+        val view = inflater.inflate(R.layout.fragment_product_detail, container, false)
 
-        var recyclerView = view.findViewById<RecyclerView>(R.id.productsRecycle)
+        val btnMenu = view.findViewById<Button>(R.id.btnBack)
+
+        var recyclerView = view.findViewById<RecyclerView>(R.id.productsDetailRecycle)
         initData()
 
-        /*Ñinea completa*/
-        /*var layoutManager = LinearLayoutManager(container?.context)*/
-        /*para la cuadricula se necesita*/
-        var gridLayoutManager = GridLayoutManager(container?.context,2)
 
+
+        var layoutManager = LinearLayoutManager(container?.context)
         var adapter =  ProductAdapter(products)
-        recyclerView?.layoutManager = gridLayoutManager
+        recyclerView?.layoutManager = layoutManager
         recyclerView?.adapter = adapter
-
-        val btnBack = view.findViewById<Button>(R.id.btnBack)
-        btnBack.setOnClickListener{
+        btnMenu.setOnClickListener{
             val navController : NavController = Navigation.findNavController(view)
-            navController.navigate(R.id.action_productFragment_to_menuFragment)
-        }
-
-        val btnMore = view.findViewById<Button>(R.id.btnProductDetailsMenu)
-        btnMore.setOnClickListener{
-            val navController : NavController = Navigation.findNavController(view)
-            navController.navigate(R.id.action_productFragment_to_productDetailFragment)
+            navController.navigate(R.id.action_productDetailFragment_to_menuFragment)
         }
 
         return view
+
     }
     fun initData() {
         products = listOf(
