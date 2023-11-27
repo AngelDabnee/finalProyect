@@ -20,7 +20,7 @@ class ProductDetailFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_product_detail, container, false)
 
-        val btnMenu = view.findViewById<Button>(R.id.btnBack)
+        val btnBack = view.findViewById<Button>(R.id.btnBack)
 
         var recyclerView = view.findViewById<RecyclerView>(R.id.productsDetailRecycle)
         initData()
@@ -28,10 +28,10 @@ class ProductDetailFragment : Fragment() {
 
 
         var layoutManager = LinearLayoutManager(container?.context)
-        var adapter =  ProductAdapter(products)
+        var adapter =  ProductDetailAdapter(products)
         recyclerView?.layoutManager = layoutManager
         recyclerView?.adapter = adapter
-        btnMenu.setOnClickListener{
+        btnBack.setOnClickListener{
             val navController : NavController = Navigation.findNavController(view)
             navController.navigate(R.id.action_productDetailFragment_to_menuFragment)
         }

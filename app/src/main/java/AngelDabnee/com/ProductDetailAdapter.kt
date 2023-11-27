@@ -10,13 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
 class ProductDetailAdapter(private var productsDetails:List<ProductStock>):
-    RecyclerView.Adapter<ProductAdapter.ProductStockViewHolder>() {
+    RecyclerView.Adapter<ProductDetailAdapter.ProductStockViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ProductAdapter.ProductStockViewHolder {
+    ): ProductStockViewHolder {
         val inflador = LayoutInflater.from(parent.context)
-        return ProductAdapter.ProductStockViewHolder(inflador.inflate(R.layout.item_productdetail,parent,false))
+        return ProductStockViewHolder(inflador.inflate(R.layout.item_productdetail,parent,false))
 
     }
 
@@ -24,7 +24,7 @@ class ProductDetailAdapter(private var productsDetails:List<ProductStock>):
         return productsDetails.size
     }
 
-    override fun onBindViewHolder(holder: ProductAdapter.ProductStockViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ProductStockViewHolder, position: Int) {
         holder.render(productsDetails[position])
     }
     class ProductStockViewHolder(view: View):RecyclerView.ViewHolder(view) {
