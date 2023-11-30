@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#FFFFFFFF</color>
-
-    <!--Colores del SPLASH. -->
-    <color name="blue">#4295C9</color>
     <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#4295C9</color>
     <color name="red">#ea284b</color>
     <!--Colores del login. -->
     <color name="gray">#4E4C6B</color>
     <color name="redtwo">#7f1e47</color>
     <color name= "green">#00FF00</color>
-
 </resources>

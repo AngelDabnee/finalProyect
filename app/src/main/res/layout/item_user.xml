@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardUser"
         android:layout_width="match_parent"
@@ -13,10 +14,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         >
+
         <ImageView
             android:id="@+id/imgUser"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:src="@drawable/userimage"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -55,5 +58,6 @@
             app:layout_constraintStart_toStartOf="parent"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

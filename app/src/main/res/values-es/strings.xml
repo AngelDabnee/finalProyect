@@ -30,6 +30,11 @@
 
 
     <string name="btnProductDetail">Ver Más</string>
+    <string name="hideUserName">Escriba su Nombre</string>
+    <string name="hideUserPassword">Escriba su Contraseña</string>
+    <string name="txtname">Nombre</string>
+    <string name="txtpassword">Contraseña</string>
+    <string name="btnLogin">Entrar</string>
 
 
 </resources>

@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cardProduct"
         android:layout_width="match_parent"
@@ -42,8 +43,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 
 

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "AngelDabnee.com"
+    namespace = "com.angeldabnee.inventary"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "AngelDabnee.com"
+        applicationId = "com.angeldabnee.inventary"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

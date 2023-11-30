@@ -1,9 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.InventaryProyect" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Inventary" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/red</item>
     </style>
+
+    <style name="Theme.Inventary" parent="Base.Theme.Inventary" />
+
     <style name="btnLogin" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:textColor">@color/black</item>
         <item name="backgroundTint">@color/red</item>
@@ -25,8 +28,6 @@
         <item name="android:layout_height">135dp</item>
     </style>
 
-    <style name="Theme.InventaryProyect" parent="Base.Theme.InventaryProyect" />
-
     <style name="btnReorden" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:textColor">@color/black</item>
         <item name="backgroundTint">@color/green</item>
@@ -40,6 +41,12 @@
         <item name="android:width">150dp</item>
     </style>
 
+    <style name="hitColor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:width">150dp</item>
+    </style>
 
 
 

@@ -5,63 +5,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/fondoinicio"
-
     tools:context=".ProductFragment">
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btnBackMenu"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="12dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        />
-    <Button
-        android:id="@+id/btnProductDetailsMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:text="@string/btnProductDetail"
-        />
-    <TextView
-        android:id="@+id/titleProduct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textSubTitleProduct"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/btnBack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        />
-    <View
-        android:id="@+id/separateLine"
-        android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/titleProduct"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/red"
-        />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/productsRecycle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/separateLine"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
