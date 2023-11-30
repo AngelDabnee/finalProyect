@@ -35,9 +35,13 @@ class LoginFragment : Fragment() {
                 val email = name.text.toString()
                 val pass = password.text.toString()
 
-                if(checkUserName(email,users)&& checkPassword(pass,users)){
+                if(checkUser(email,pass,users)){
+                    Toast.makeText(context,"Bienvenido",Toast.LENGTH_SHORT).show()
                     val i = Intent(view.context,MainActivity::class.java)
                     startActivity(i)
+                    activity?.finish()
+
+
                 }else{
                     Toast.makeText(context,
                         "Las credenciales no coinciden",
@@ -53,18 +57,15 @@ class LoginFragment : Fragment() {
         }
         return view
     }
-    private fun checkUserName (text:String,users:List<UserData>):Boolean{
-            return users.any{user->text==user.email
-            }
+    private fun checkUser(username:String,password:String,users:List<UserData>):Boolean{
+        return users.any{users->username==users.email && password == users.password}
     }
-    private fun checkPassword(text:String,users:List<UserData>):Boolean{
-        return users.any{user->text==user.password}
-    }
+
     fun validUser(){
         users = listOf(
             UserData(1,"Angel Dabnee","6622557788","angeldabnee@gmail.com","AngelDabnee","https://scontent.fhmo1-2.fna.fbcdn.net/v/t39.30808-6/399722136_1417271112535651_8075701572657257127_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Qkk5BT1BDsUAX_3fJdT&_nc_ht=scontent.fhmo1-2.fna&oh=00_AfAHyIa9V71fZ8JcnnCju547pMzOtSGBinpIzAxIaIBttw&oe=6568154F"),
             UserData(2,"Glenda Morales","6655889977","glenda@gmail.com","GlendaMorales","https://scontent.fhmo1-2.fna.fbcdn.net/v/t39.30808-1/349012138_152303231037038_8434918744964554763_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=UhN59n68m64AX8GE4aI&_nc_ht=scontent.fhmo1-2.fna&oh=00_AfCUsqsk8ikXMU82eZBkG1qRmfaQVgX6qH6y71mEO46_HQ&oe=6568B989"),
-            UserData(3,"Luis Acuña","6699887744","acuña@gmail.com","Luis Acuña","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPQ1XK3TdLJu4fBDqtGXdcioOo8hVk4jWOw&usqp=CAU")
+            UserData(3,"Luis Acuña","6699887744","acuña@gmail.com","luisacuna","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPQ1XK3TdLJu4fBDqtGXdcioOo8hVk4jWOw&usqp=CAU")
         )
     }
 }
