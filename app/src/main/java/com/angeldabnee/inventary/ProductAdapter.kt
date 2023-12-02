@@ -35,21 +35,17 @@ class ProductAdapter(private var products:List<ProductStock>):
         val name: TextView = itemView.findViewById(R.id.productName)
         val image : ImageView = itemView.findViewById(R.id.imgProduct)
 
-
-        /*val price : TextView = itemView.findViewById(R.id.priceProductDetail)
-        val quantity :TextView = itemView.findViewById(R.id.quantityProductDetail)
-        val name2: TextView = itemView.findViewById(R.id.nameProductDetail)
-        val unit : TextView = itemView.findViewById(R.id.unitiProductDetail)*/
+        val price : TextView = itemView.findViewById(R.id.productPrice)
+        val quantity :TextView = itemView.findViewById(R.id.productQuantity)
+        val unit : TextView = itemView.findViewById(R.id.productUnit)
 
 
         fun render(productStock:ProductStock){
             val context: Context = itemView.context
             name.text = productStock.name
-            /*price.text = productStock.price.toString()
+            price.text = productStock.price.toString()
             quantity.text = productStock.quantity.toString()
-            name2.text = productStock.name
-            unit.text = productStock.unit*/
-
+            unit.text = productStock.unit
             Picasso.get().load(productStock.image).into(image)
 
         }
