@@ -37,4 +37,30 @@
     <string name="btnLogin">Entrar</string>
 
 
+    <!--Strings para los bsd de nuevos-->
+    <string name="titleNewProduct">Nuevo Producto</string>
+    <string name="product_id">Numero #</string>
+    <string name="product_name">Nombre del Producto</string>
+    <string name="product_price">Precio del Producto</string>
+    <string name="product_quantity">Stock del Producto</string>
+    <string name="product_unit">Unidad de Medida del Producto</string>
+    <string name="product_image">Imagen del Producto</string>
+    <string name="btn_new">Añadir </string>
+
+    <string name="titleNewUser">Nuevo Usuario</string>
+    <string name="user_id">Numero #</string>
+    <string name="user_name">Nombre del Usuario</string>
+    <string name="user_phone">Celular del Usuario</string>
+    <string name="user_email">Correo del Usuario</string>
+    <string name="user_password">Contraseña del Usuario</string>
+    <string name="user_image">Imagen del Usuario</string>
+
+    <string name="titleNewSupplier">Nuevo Proveedor</string>
+    <string name="supplier_id">Identificador #</string>
+    <string name="supplier_name">Nombre del Proveedor</string>
+    <string name="supplier_phone">Celular del Proveedor</string>
+    <string name="supplier_email">Email del Proveedor</string>
+    <string name="supplier_image">Imagen del Proveedor</string>
+
+
 </resources>

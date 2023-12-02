@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class ProductFragment : Fragment() {
@@ -20,6 +22,14 @@ class ProductFragment : Fragment() {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_product, container, false)
         var recyclerView = view.findViewById<RecyclerView>(R.id.productsRecycle)
+
+        val fab = view.findViewById<FloatingActionButton>(R.id.fab_new_product)
+        fab.setOnClickListener{
+            val bottomSheetDialog = BottomSheetDialog(view.context)
+            val parentView : View = layoutInflater.inflate(R.layout.bsd_new_product,null)
+            bottomSheetDialog.setContentView(parentView)
+            bottomSheetDialog.show()
+        }
         initData()
         var gridLayoutManager = GridLayoutManager(container?.context,2)
 

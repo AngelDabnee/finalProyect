@@ -37,8 +37,7 @@ class MenuFragment : Fragment() {
             navController.navigate(R.id.action_menuFragment_to_userFragment)
         }
         btnExit.setOnClickListener{
-            val navController : NavController = Navigation.findNavController(view)
-            navController.navigate(R.id.action_menuFragment_to_exitFragment)
+            activity?.finish()
         }
 
         return view
