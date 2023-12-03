@@ -16,7 +16,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class SupplierFragment : Fragment() {
-    private var suppliers:List<SupplierData> = emptyList()
+    private var suppliers:MutableList<SupplierData> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,7 +57,8 @@ class SupplierFragment : Fragment() {
                 bsd_new_image = newImage.text.toString()
                 val toastMessage = "$bsd_new_id $bsd_new_name $bsd_new_phone $bsd_new_email $bsd_new_image"
                 val newSupplierAdd = SupplierData(bsd_new_id,bsd_new_name,bsd_new_phone,bsd_new_email,bsd_new_image)
-                suppliers.toMutableList().add(newSupplierAdd)
+
+                suppliers.add(newSupplierAdd)
                 recyclerView.adapter?.notifyDataSetChanged()
 
                 Toast.makeText(context,toastMessage, Toast.LENGTH_SHORT).show()
@@ -78,7 +79,7 @@ class SupplierFragment : Fragment() {
 
     }
     fun initData(){
-        suppliers = listOf(
+        suppliers = mutableListOf(
             SupplierData(1,"Apple","11223311","apple@gmail.com","https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202308111139"),
             SupplierData(2,"Microsoft","6699887744","micro@gmail.com","https://i.blogs.es/ed750c/microsoft-ai/500_333.jpeg"),
             SupplierData(3,"Sony","6655887744","sony@gmail.com","https://img.lalr.co/cms/2020/03/25163003/sonyal.jpg?size=sm")

@@ -35,6 +35,8 @@
     <string name="txtname">Nombre</string>
     <string name="txtpassword">Contraseña</string>
     <string name="btnLogin">Entrar</string>
+    <string name="btnRegister">Registrar</string>
+
 
 
     <!--Strings para los bsd de nuevos-->

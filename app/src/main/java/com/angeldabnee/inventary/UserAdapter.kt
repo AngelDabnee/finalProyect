@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class UserAdapter(private val user:List<UserData>): RecyclerView.Adapter<UserAdapter.UserDataViewHolder>() {
+class UserAdapter(private val user:MutableList<UserData>): RecyclerView.Adapter<UserAdapter.UserDataViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int

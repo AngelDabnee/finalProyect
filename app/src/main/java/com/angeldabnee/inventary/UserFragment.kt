@@ -17,7 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class UserFragment : Fragment() {
-    private var users:List<UserData> = emptyList()
+    private var users:MutableList<UserData> = mutableListOf()
 
 
     override fun onCreateView(
@@ -59,11 +59,12 @@ class UserFragment : Fragment() {
                 bsd_new_image = newImage.text.toString()
                 val toastMessage = "$bsd_new_id $bsd_new_name $bsd_new_phone $bsd_new_email $bsd_new_password $bsd_new_image"
                 val newUserAdd = UserData(bsd_new_id,bsd_new_name,bsd_new_phone,bsd_new_email,bsd_new_password,bsd_new_image)
-                users.toMutableList().add(newUserAdd)
+
+                users.add(newUserAdd)
 
                 recyclerView.adapter?.notifyDataSetChanged()
 
-                Toast.makeText(context,toastMessage, Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Usuario Registrado Correctamente", Toast.LENGTH_SHORT).show()
                 bottomSheetDialog.dismiss()
             }
 
@@ -81,8 +82,8 @@ class UserFragment : Fragment() {
         return view
     }
     fun initData(){
-        users = listOf(
-            UserData(1,"Angel Dabnee","6622557788","dabnee@gmail.com","AngelDabnee","https://w0.peakpx.com/wallpaper/438/947/HD-wallpaper-el-rey-spiderman-chido-clasico.jpg"),
+        users = mutableListOf(
+            UserData(1,"Angel Dabnee","6622557788","angeldabnee@gmail.com","AngelDabnee","https://drive.google.com/uc?export=view&id=1XdSNFuyGXm7YlKXyuUkOEkRePCIWmYO0"),
             UserData(2,"Glenda Morales","6655889977","glenda@gmail.com","GlendaMorales","https://i.etsystatic.com/41932313/r/il/cb3152/5272343156/il_fullxfull.5272343156_q52x.jpg"),
             UserData(3,"Luis Acuña","6699887744","acuña@gmail.com","Luis Acuña","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuPQ1XK3TdLJu4fBDqtGXdcioOo8hVk4jWOw&usqp=CAU")
         )

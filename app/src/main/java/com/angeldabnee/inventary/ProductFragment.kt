@@ -15,7 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class ProductFragment : Fragment() {
-    private var products:List<ProductStock> = emptyList()
+    private var products: MutableList<ProductStock> = mutableListOf()
 
 
     override fun onCreateView(
@@ -61,11 +61,11 @@ class ProductFragment : Fragment() {
                 val toastMessage = "$bsd_new_id $bsd_new_name $bsd_new_price $bsd_new_quantity $bsd_new_unit $bsd_new_image"
                 val newProductAdd = ProductStock(bsd_new_id,bsd_new_name,bsd_new_price,bsd_new_quantity,bsd_new_unit,bsd_new_image)
 
-                products.toMutableList().add(newProductAdd)
+                products.add(newProductAdd)
 
                 recyclerView.adapter?.notifyDataSetChanged()
 
-                Toast.makeText(context,toastMessage,Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"PRODUCTO REGISTRADO EXITOSAMENTE",Toast.LENGTH_SHORT).show()
                 bottomSheetDialog.dismiss()
             }
 
@@ -73,7 +73,7 @@ class ProductFragment : Fragment() {
         initData()
         var gridLayoutManager = GridLayoutManager(container?.context,2)
 
-        var adapter =  ProductAdapter(products)
+        var adapter = ProductAdapter(products)
         recyclerView?.layoutManager = gridLayoutManager
         recyclerView?.adapter = adapter
 
@@ -82,7 +82,7 @@ class ProductFragment : Fragment() {
 
     }
     fun initData() {
-        products = listOf(
+        products = mutableListOf(
             ProductStock(1,"IPhone 13",198.58,2,"Piezas","https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcShSPLyy0cedE9vXeS2cyZ53PKgFpcuIpcNZoW7g3heTnZWFQoJ7VYwvMVKq5B-UhFTjL1H5kdOmQxHaL8g-xSRuM-HsifKpyugK5cQtOnYp4RYWNnQ0tk8dvs&usqp=CAE"),
             ProductStock(2,"MacBook Air",5486.58,3,"Piezas","https://http2.mlstatic.com/D_NQ_NP_709500-MLM69984412976_062023-O.webp"),
             ProductStock(4,"Monitor Sony de 43 Pulgadas",10005.3,3,"Piezas","https://m.media-amazon.com/images/I/611ZgcbBKyL._AC_UF1000,1000_QL80_.jpg"),

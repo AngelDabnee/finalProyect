@@ -2,7 +2,7 @@
     <string name="app_name">Inventary</string>
 
     <!--StringSplash-->
-    <string name="title">WELCOME</string>
+    <string name="title">WELCOME TO YOUR INVENTORY</string>
 
     <!--StringLogin-->
     <string name="name">NAME</string>
@@ -31,11 +31,13 @@
 
     <string name="btnProductDetail">More</string>
 
-    <string name="hideUserName">Enter Username</string>
+    <string name="hideUserName">Enter Email</string>
     <string name="hideUserPassword">Enter Password</string>
-    <string name="txtname">Name</string>
+    <string name="txtname">Email</string>
     <string name="txtpassword">Password</string>
     <string name="btnLogin">Login</string>
+    <string name="btnRegister">Register</string>
+
 
 
     <!--Strings para los bsd de nuevos-->

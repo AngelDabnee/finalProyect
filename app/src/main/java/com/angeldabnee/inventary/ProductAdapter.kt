@@ -10,8 +10,13 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class ProductAdapter(private var products:List<ProductStock>):
+class ProductAdapter(private var products:MutableList<ProductStock>):
     RecyclerView.Adapter<ProductAdapter.ProductStockViewHolder>() {
+    fun updateData(newProducts: List<ProductStock>) {
+        products.clear()
+        products.addAll(newProducts)
+        notifyDataSetChanged()
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductStockViewHolder {
         val inflador = LayoutInflater.from(parent.context)
         return ProductStockViewHolder(inflador.inflate(R.layout.item_product,parent,false))
@@ -23,8 +28,6 @@ class ProductAdapter(private var products:List<ProductStock>):
         btnImage.setOnClickListener{
             Toast.makeText(btnImage.context, "Aplastamos la Imagen", Toast.LENGTH_SHORT).show()
         }
-
-
     }
 
     override fun getItemCount(): Int {
