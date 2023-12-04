@@ -42,28 +42,28 @@
 
     <!--Strings para los bsd de nuevos-->
     <string name="titleNewProduct">New Product</string>
-    <string name="product_id">Product #</string>
-    <string name="product_name">Product Name</string>
-    <string name="product_price">Product Price</string>
-    <string name="product_quantity">Product Quantity</string>
-    <string name="product_unit">Product Unit</string>
-    <string name="product_image">Product Image</string>
+    <string name="product_id">Id</string>
+    <string name="product_name">Name</string>
+    <string name="product_price">Price</string>
+    <string name="product_quantity">Quantity</string>
+    <string name="product_unit">Unit</string>
+    <string name="product_image">Image</string>
     <string name="btn_new">Add </string>
 
     <string name="titleNewUser">New User</string>
-    <string name="user_id">User #</string>
-    <string name="user_name">User Name</string>
-    <string name="user_phone">User Phone</string>
-    <string name="user_email">User Email</string>
-    <string name="user_password">User Password</string>
-    <string name="user_image">User Image</string>
+    <string name="user_id">Id</string>
+    <string name="user_name">Name</string>
+    <string name="user_phone">Phone</string>
+    <string name="user_email">Email</string>
+    <string name="user_password">Password</string>
+    <string name="user_image">Image</string>
 
     <string name="titleNewSupplier">New Supplier</string>
-    <string name="supplier_id">Supplier #</string>
-    <string name="supplier_name">Supplier Name</string>
-    <string name="supplier_phone">Supplier Phone</string>
-    <string name="supplier_email">Supplier Email</string>
-    <string name="supplier_image">Supplier Image</string>
+    <string name="supplier_id">Id</string>
+    <string name="supplier_name">Name</string>
+    <string name="supplier_phone">Phone</string>
+    <string name="supplier_email">Email</string>
+    <string name="supplier_image">Image</string>
 
 
 

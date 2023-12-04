@@ -14,16 +14,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         >
-
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.40"
+            />
         <ImageView
             android:id="@+id/imgUser"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/userimage"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLine"
             app:layout_constraintTop_toTopOf="parent"
             />
+
         <TextView
             android:id="@+id/nameUser"
             android:layout_width="wrap_content"
@@ -31,10 +38,10 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            app:layout_constraintTop_toBottomOf="@id/imgUser"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="@id/guideLine"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
             />
         <TextView
@@ -44,8 +51,9 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guideLine"
             app:layout_constraintTop_toBottomOf="@id/nameUser"
-            app:layout_constraintStart_toStartOf="parent"
+
             />
         <TextView
             android:id="@+id/emailUser"
@@ -54,8 +62,8 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guideLine"
             app:layout_constraintTop_toBottomOf="@id/phoneUser"
-            app:layout_constraintStart_toStartOf="parent"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
